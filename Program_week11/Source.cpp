@@ -16,6 +16,17 @@ int main()
 	lenght = strlen(name);
 	get_reverse(name, lenght);
 	print(name);
+	cout << endl;
+
+	for (int i = lenght; i >= 1; --i)
+	{
+		for (int j = 1; j <= i; ++j)
+		{
+			cout << name[j-1] << " ";
+		}
+		cout << endl;
+	}
+
 
 	return 0;
 }
@@ -54,3 +65,4 @@ void print(char* name)
 {
 	printf("Reverse of a string is %s", name);
 }
+
